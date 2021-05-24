@@ -96,4 +96,9 @@ body,html{
     margin-right: 10px;
     cursor: pointer;
 }
-  
+.createBlog{
+    background-color: brown;
+    border-radius: 15px;
+    box-shadow:0 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+ 
