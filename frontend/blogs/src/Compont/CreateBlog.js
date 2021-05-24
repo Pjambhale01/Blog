@@ -25,10 +25,12 @@ export function Createblog(props) {
     }
     return (
         <div style={{ width: '50%', margin: 'auto' }}>
-            <h3>create your bloge here!!! </h3>
+            
             <Form onSubmit={handleSubmit}>
+                <div  className="createBlog">
+                    <h3 style={{marginLeft:'200px'}}>create your bloge here!!! </h3>
                 <Form.Group controlId="formBasicEmail">
-                    <Form.Label><b>Title</b></Form.Label>
+                    <Form.Label style={{marginLeft:'300px'}}><b>Title</b></Form.Label>
                     <Form.Control style={{ width: '400px' }}
                         name="title"
                         placeholder="Title"
@@ -38,7 +40,7 @@ export function Createblog(props) {
                     />
                 </Form.Group>
                 <Form.Group controlId="formBasicEmail">
-                    <Form.Label><b>Discription</b></Form.Label>
+                    <Form.Label style={{marginLeft:'280px'}}><b>Discription</b></Form.Label>
                     <Form.Control style={{ width: '400px' }}
                         name="discription"
                         value={state.discription}
@@ -47,6 +49,7 @@ export function Createblog(props) {
                         onChange={handlChange}
                     />
                 </Form.Group>
+                 <div style={{marginLeft:'250px'}}>
                 <label for="category"><b>Category:</b></label>
                 <select name='category' value={state.category}  onChange={handlChange}>
                     <option value="">Choose ..</option>
@@ -55,10 +58,12 @@ export function Createblog(props) {
                     <option value="Agriculture">Agriculture</option>
                     <option value="Envoirment">Envoirment</option>
                 </select>
+                 <div>
                 <br></br>
-                <Button variant="primary" type="submit">
+                <Button style={{marginLeft:'300px'}} variant="primary" type="submit">
                     Submit
                 </Button>
+              </div>
             </Form>
         </div>
     )
